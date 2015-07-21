@@ -1,4 +1,4 @@
-var birthday = require('./scraper-birthday-no');
+var birthday = require('./node-birthday-no');
 
 var person = {
   firstName: "Preben",
