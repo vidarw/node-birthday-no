@@ -1,4 +1,4 @@
-# node-birthday-no
+# birthday-no-search
 Node module for Birthday.no searches.
 Two or more of the following parameters are required:
 
