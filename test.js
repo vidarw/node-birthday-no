@@ -1,10 +1,11 @@
-var birthday = require('./node-birthday-no');
+var birthday = require('./birthday-no-search');
 
-var person = {
+var query = {
   firstName: "Preben",
-  lastName: "Hansen"
+  lastName: "Hansen",
+  verbose: true
 }
 
-birthday.search(person, function(result){
+birthday.search(query, function(result){
   console.log(result);
 })

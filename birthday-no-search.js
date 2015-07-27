@@ -1,18 +1,18 @@
 var jsdom = require('jsdom');
 var moment = require('moment');
 
-var search = function(parameters, callback){
+var search = function(query, callback){
   var url = "http://www.birthday.no/sok/?";
-  if (parameters.firstName) url += "f=" + escape(parameters.firstName);
-  if (parameters.lastName) url += "&l=" + escape(parameters.lastName);
-  if (parameters.zip) url += "&z=" + escape(parameters.zip);
-  if (parameters.city) url += "&c=" + escape(parameters.city);
+  if (query.firstName) url += "f=" + escape(query.firstName);
+  if (query.lastName) url += "&l=" + escape(query.lastName);
+  if (query.zip) url += "&z=" + escape(query.zip);
+  if (query.city) url += "&c=" + escape(query.city);
 
   var result = [];
 
-  console.log('url:', url);
+  if (query.verbose) console.log('url:', url);
 
-  jsdom.env({url: url, encoding: 'binary', scripts: ["http://code.jquery.com/jquery.js"], done: function (errors, window) {
+  jsdom.env({url: url, encoding: 'binary', scripts: ["https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"], done: function (errors, window) {
 
     window.$("#birthdaylist > div").each(function(i, el){
       var person = {};

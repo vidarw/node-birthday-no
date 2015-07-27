@@ -3,10 +3,10 @@
     "jsdom": "^3.1.2",
     "moment": "^2.10.3"
   },
-  "name": "node-birthday-no",
+  "name": "birthday-no-search",
   "description": "Node module for Birthday.no searches.",
   "version": "1.0.0",
-  "main": "node-birthday-no.js",
+  "main": "birthday-no-search.js",
   "devDependencies": {},
   "scripts": {
     "test": "node test.js"
