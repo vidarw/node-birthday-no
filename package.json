@@ -18,12 +18,13 @@
   "keywords": [
     "search",
     "birthday.no",
-    "privacy"
+    "birthday",
+    "norwegian"
   ],
   "author": "Vidar Waagbø <vidar@waagbo.com> (https://github.com/vidarw)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vidarw/node-birthday-no/issues"
+    "url": "https://github.com/vidarw/node-birthday-no-search/issues"
   },
-  "homepage": "https://github.com/vidarw/node-birthday-no"
+  "homepage": "https://github.com/vidarw/node-birthday-no-search"
 }
