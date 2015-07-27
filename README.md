@@ -9,11 +9,11 @@ Two or more of the following parameters are required:
 
 ## Example
 
-  var person = {
-    firstName: "Preben",
-    lastName: "Hansen"
-  }
-
-  birthday.search(person, function(result){
-    console.log(result);
-  });
+    var person = {
+      firstName: "Preben",
+      lastName: "Hansen"
+    };
+  
+    birthday.search(person, function(result){
+      console.log(result);
+    });
